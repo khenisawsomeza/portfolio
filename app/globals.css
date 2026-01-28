@@ -57,7 +57,7 @@ html {
 
 body {
   min-height: 100vh;
-  background: radial-gradient(circle at 20% 20%, #111628 0, transparent 24%),
+    background: radial-gradient(circle at 20% 20%, #111628 0, transparent 24%),
     radial-gradient(circle at 80% 0%, #1b123a 0, transparent 20%),
     radial-gradient(circle at 90% 50%, rgba(34, 211, 238, 0.12) 0, transparent 26%),
     var(--background);
@@ -66,13 +66,6 @@ body {
   overscroll-behavior-y: smooth;
   -webkit-overflow-scrolling: touch;
   transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.light body {
-  background: radial-gradient(circle at 20% 20%, #e0e7ff 0, transparent 24%),
-    radial-gradient(circle at 80% 0%, #faf5ff 0, transparent 20%),
-    radial-gradient(circle at 80% 0%, #faf5ff 0, transparent 20%),
-    var(--background);
 }
 
 *::selection {

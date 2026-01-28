@@ -35,7 +35,7 @@ export function HomePage() {
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-transparent">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(139,92,246,0.18),transparent_28%),radial-gradient(circle_at_75%_10%,rgba(34,211,238,0.14),transparent_24%),radial-gradient(circle_at_70%_60%,rgba(255,255,255,0.05),transparent_34%)]" />
+      <div className="pointer-events-none absolute inset-0 " />
 
       <FloatingNav items={navItems} show={showNav} />
 
