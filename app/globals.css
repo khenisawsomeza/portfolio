@@ -9,6 +9,16 @@
   --accent-soft: rgba(139, 92, 246, 0.16);
 }
 
+/* Light mode */
+.light {
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+  --muted: #6b7280;
+  --card: #f9fafb;
+  --accent: #8b5cf6;
+  --accent-soft: rgba(139, 92, 246, 0.1);
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -55,6 +65,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   overscroll-behavior-y: smooth;
   -webkit-overflow-scrolling: touch;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.light body {
+  background: radial-gradient(circle at 20% 20%, #e0e7ff 0, transparent 24%),
+    radial-gradient(circle at 80% 0%, #faf5ff 0, transparent 20%),
+    radial-gradient(circle at 80% 0%, #faf5ff 0, transparent 20%),
+    var(--background);
 }
 
 *::selection {

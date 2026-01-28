@@ -55,50 +55,21 @@ export const skills: SkillGroup[] = [
 
 export const projects: Project[] = [
   {
-    title: "Project Launchpad",
-    description:
-      "A deployment-ready starter that pairs Next.js with CI/CD, role-based access, and observability wiring so teams can ship faster.",
-    tech: ["Next.js", "TypeScript", "PostgreSQL", "Playwright", "Vercel"],
-    features: [
-      "Auth, RBAC, and audit logging baked-in for production readiness",
-      "End-to-end tests with seeded demo data for reliable releases",
-      "Zero-downtime deploys and feature flags for safe rollouts",
-    ],
-    links: {
-      github: "https://github.com/",
-      demo: "https://vercel.com/",
-    },
+  title: "Smart Study App",
+  description:
+    "An AI-powered study management web app that helps students focus, retain information, and study efficiently through active recall and behavior-driven planning.",
+  tech: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Vercel"],
+  features: [
+    "AI-driven study scheduling with spaced repetition",
+    "Built-in focus mode for deep, distraction-free sessions",
+    "Learning analytics to track mastery and weak areas",
+  ],
+  links: {
+    github: "https://github.com/khenisawsomeza/smart-app",
+    demo: "https://smart-study25.vercel.app",
   },
-  {
-    title: "Insight Dashboard",
-    description:
-      "Real-time analytics dashboard that transforms event streams into actionable metrics with rich visualizations and alerts.",
-    tech: ["React", "Next.js", "WebSockets", "Redis", "Tailwind CSS"],
-    features: [
-      "Stream processing pipeline with debounced updates for snappy UI",
-      "Composable chart components with accessibility-first defaults",
-      "Alerting rules and incident timeline for rapid triage",
-    ],
-    links: {
-      github: "https://github.com/",
-      demo: "https://vercel.com/",
-    },
-  },
-  {
-    title: "Studio CMS",
-    description:
-      "Custom CMS for marketing teams with modular content blocks, live preview, and SEO controls that keep pages blazing fast.",
-    tech: ["Next.js", "TypeScript", "MDX", "Edge Functions", "Analytics"],
-    features: [
-      "Schema-driven content blocks with guardrails to prevent layout drift",
-      "Live preview that mirrors production rendering for confidence",
-      "Edge caching strategy that keeps TTFB low across regions",
-    ],
-    links: {
-      github: "https://github.com/",
-      demo: "https://vercel.com/",
-    },
-  },
+}
+
 ];
 
 export const experience: ExperienceItem[] = [

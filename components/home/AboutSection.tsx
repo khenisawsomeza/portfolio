@@ -17,11 +17,11 @@ export function AboutSection() {
             <p>
               I build software with a balance of speed, quality, and long-term maintainability. I
               thrive in collaborative environments, pairing closely with designers, product managers,
-              and stakeholders to deliver features users love.
+              and fellow engineers to deliver features users love.
             </p>
             <p>
-              My work spans end-to-end architecture, frontend craft, and backend services. I care
-              deeply about DX, observability, and leaving codebases better than I found them.
+              My work spans end-to-end architecture, frontend craft, backend services, and AI integration. I care
+              deeply about UI/UX, DX, observability, and leaving codebases better than I found them.
             </p>
           </div>
         </ScrollAnimate>
@@ -31,15 +31,15 @@ export function AboutSection() {
             <ul className="mt-4 space-y-3">
               <li className="flex items-start gap-2">
                 <span className="mt-1 h-2 w-2 rounded-full bg-purple-400" />
-                <span>Clear communication with realistic timelines and crisp status updates.</span>
+                <span>Systems over Fixes Build systemic prevention, not patches.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-1 h-2 w-2 rounded-full bg-cyan-300" />
-                <span>Design empathy and accessibility baked into every feature.</span>
+                <span>Performance as a Feature Enforce budgets; speed is critical.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-1 h-2 w-2 rounded-full bg-amber-300" />
-                <span>Performance budgets, instrumentation, and tight feedback loops.</span>
+                <span>Radical Operational Clarity Data-driven updates; zero bloat.</span>
               </li>
             </ul>
           </div>
