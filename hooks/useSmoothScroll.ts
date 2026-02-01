@@ -2,12 +2,7 @@
 
 import { useEffect } from "react";
 
-// Smooth easing function for more natural scroll animation
-function easeInOutCubic(t: number): number {
-  return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-}
-
-function smoothScrollTo(targetPosition: number, duration: number = 1200) {
+function smoothScrollTo(targetPosition: number, duration: number = 600) {
   const startPosition = window.pageYOffset;
   const distance = targetPosition - startPosition;
   let startTime: number | null = null;
@@ -17,8 +12,7 @@ function smoothScrollTo(targetPosition: number, duration: number = 1200) {
     const timeElapsed = currentTime - startTime;
     const progress = Math.min(timeElapsed / duration, 1);
 
-    const ease = easeInOutCubic(progress);
-    window.scrollTo(0, startPosition + distance * ease);
+    window.scrollTo(0, startPosition + distance * progress);
 
     if (timeElapsed < duration) {
       requestAnimationFrame(animation);

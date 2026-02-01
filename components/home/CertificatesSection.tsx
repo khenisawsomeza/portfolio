@@ -15,8 +15,8 @@ export function CertificatesSection({ certificates }: CertificatesSectionProps) 
     <section id="certificates" className="mt-16 space-y-6">
       <ScrollAnimate>
         <div className="flex items-center gap-3">
-          <span className="h-[1px] w-10 bg-gradient-to-r from-transparent via-white/40 to-transparent" />
-          <p className="text-sm uppercase tracking-[0.24em] text-zinc-400">Certificates</p>
+          <span className="h-[1px] w-10 bg-gradient-to-r from-transparent via-[var(--muted)]/40 to-transparent" />
+          <p className="text-sm uppercase tracking-[0.24em] text-[var(--muted)]">Certificates</p>
         </div>
       </ScrollAnimate>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">

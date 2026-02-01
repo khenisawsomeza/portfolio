@@ -3,9 +3,8 @@
 :root {
   --background: #05060a;
   --foreground: #f5f6f8;
-  --muted: #a9b0bd;
-  --card: #0d0f14;
-  --accent: #8b5cf6;
+  --foreground2: #05060a;
+  --muted: #9ca3af;
   --accent-soft: rgba(139, 92, 246, 0.16);
   --gradient-1: #111628;
   --gradient-2: #1b123a;
@@ -14,15 +13,14 @@
 
 /* Light mode */
 .light {
-  --background: rgb(108, 146, 145);
-  --foreground: #0a0a0a;
+  --background: #87CEEB;
+  --foreground: #3b3b3b;
+  --foreground2: white;
   --muted: #6b7280;
-  --card: #f9fafb;
-  --accent: #8b5cf6;
   --accent-soft: rgba(139, 92, 246, 0.1);
-  --gradient-1: rgba(34, 211, 238, 0.12);
-  --gradient-2: rgba(34, 211, 238, 0.12);
-  --gradient-3: rgba(34, 211, 238, 0.12);
+  --gradient-1: rgb(193, 235, 237);
+  --gradient-2: rgb(193, 235, 237);
+  --gradient-3: rgb(193, 235, 237);
 }
 
 html {

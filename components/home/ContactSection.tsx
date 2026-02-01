@@ -13,7 +13,7 @@ export function ContactSection() {
       >
         <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
           <div>
-            <p className="text-sm uppercase tracking-[0.24em] text-zinc-400">Contact</p>
+            <p className="text-sm uppercase tracking-[0.24em] text-zinc-300">Contact</p>
             <h3 className="mt-2 text-2xl font-semibold text-white">
               Let&apos;s build something high-impact together.
             </h3>

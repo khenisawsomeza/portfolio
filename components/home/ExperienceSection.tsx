@@ -13,8 +13,8 @@ export function ExperienceSection({ experience }: ExperienceSectionProps) {
     <section id="experience" className="mt-16 space-y-6">
       <ScrollAnimate>
         <div className="flex items-center gap-3">
-          <span className="h-[1px] w-10 bg-gradient-to-r from-transparent via-white/40 to-transparent" />
-          <p className="text-sm uppercase tracking-[0.24em] text-zinc-400">
+          <span className="h-[1px] w-10 bg-gradient-to-r from-transparent via-[var(--muted)]/40 to-transparent" />
+          <p className="text-sm uppercase tracking-[0.24em] text-[var(--muted)]">
             Experience & Education
           </p>
         </div>
