@@ -41,9 +41,6 @@ export function FloatingNav({ items, show }: FloatingNavProps) {
               key={item.id}
               href={`#${item.id}`}
               className="rounded-full px-3 py-1 text-[13px] font-medium text-zinc-200 transition hover:bg-white/10 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/60"
-              style={{
-                animation: show ? `fadeInUp 0.5s ease-out ${index * 50}ms both` : "none",
-              }}
             >
               {item.label}
             </a>
@@ -77,9 +74,6 @@ export function FloatingNav({ items, show }: FloatingNavProps) {
                 href={`#${item.id}`}
                 onClick={() => handleNavigate(item.id)}
                 className="flex items-center gap-3 px-4 py-2.5 text-[13px] font-medium text-zinc-200 transition hover:bg-white/10 hover:text-white rounded-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/60"
-                style={{
-                  animation: isDropdownOpen ? `fadeInUp 0.3s ease-out ${index * 30}ms both` : "none",
-                }}
               >
                 <span className="w-5 h-5">{iconMap[item.id]}</span>
               </a>
