@@ -68,8 +68,21 @@ export const projects: Project[] = [
     github: "https://github.com/khenisawsomeza/smart-app",
     demo: "https://smart-study25.vercel.app",
   },
-}
-
+},
+  {
+    title: "Word Guessing Game",
+    description: "A word guessing game inspired by Wordle, where players have ten attempts to guess a hidden five-letter word with feedback provided after each guess.",
+    tech: ["React", "CSS"],
+    features: [
+      "Dynamic feedback on letter accuracy and positioning",
+      "Keyboard input support for seamless gameplay",
+      "Responsive design for optimal experience across devices",
+    ],
+    links: {
+      github: "https://github.com/khenisawsomeza/guessing-game",
+      demo: "https://guessing-game-hinlog.vercel.app/",
+    },
+  },
 ];
 
 export const experience: ExperienceItem[] = [
