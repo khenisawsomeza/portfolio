@@ -2,26 +2,6 @@
 
 import { useEffect } from "react";
 
-function smoothScrollTo(targetPosition: number, duration: number = 300) {
-  const startPosition = window.pageYOffset;
-  const distance = targetPosition - startPosition;
-  let startTime: number | null = null;
-
-  function animation(currentTime: number) {
-    if (startTime === null) startTime = currentTime;
-    const timeElapsed = currentTime - startTime;
-    const progress = Math.min(timeElapsed / duration, 1);
-
-    window.scrollTo(0, startPosition + distance * progress);
-
-    if (timeElapsed < duration) {
-      requestAnimationFrame(animation);
-    }
-  }
-
-  requestAnimationFrame(animation);
-}
-
 export function useSmoothScroll() {
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
@@ -38,12 +18,7 @@ export function useSmoothScroll() {
 
       if (targetElement) {
         e.preventDefault();
-
-        const headerOffset = 100;
-        const elementPosition = targetElement.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-        smoothScrollTo(offsetPosition);
+        targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     };
 
