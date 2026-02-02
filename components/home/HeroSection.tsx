@@ -1,6 +1,7 @@
 "use client";
 
 import { RefObject } from "react";
+import { ScrollAnimate } from "../ui/ScrollAnimate";
 
 type HeroSectionProps = {
   heroRef: RefObject<HTMLElement | null>;
@@ -13,6 +14,7 @@ export function HeroSection({ heroRef }: HeroSectionProps) {
       id="hero"
       className="flex min-h-[90vh] flex-col items-center justify-center gap-12 pb-10 pt-10 text-center lg:flex-row"
     >
+      <ScrollAnimate>
       <div className="max-w-2xl space-y-6">
         <p className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[var(--foreground)]/5 px-4 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--muted)]">
           Software Developer · Portfolio
@@ -39,7 +41,8 @@ export function HeroSection({ heroRef }: HeroSectionProps) {
             Let&apos;s collaborate
           </a>
         </div>
-      </div>   
+      </div>  
+      </ScrollAnimate> 
     </section>
   );
 }

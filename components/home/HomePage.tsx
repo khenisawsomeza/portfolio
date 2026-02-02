@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 import { certificates, experience, navItems, projects, skills } from "@/data/home";
 import { useSmoothScroll } from "@/hooks/useSmoothScroll";
+import ScrollContext from "@/components/ui/ScrollContext";
 
 import { AboutSection } from "./AboutSection";
 import { CertificatesSection } from "./CertificatesSection";
@@ -40,13 +41,15 @@ export function HomePage() {
       <FloatingNav items={navItems} show={showNav} />
 
       <main className="relative mx-auto flex min-h-screen w-full max-w-6xl flex-col px-6 pb-20 pt-12 sm:px-10">
-        <HeroSection heroRef={heroRef} />
-        <AboutSection />
-        <SkillsSection skills={skills} />
-        <ProjectsSection projects={projects} />
-        <ExperienceSection experience={experience} />
-        <CertificatesSection certificates={certificates} />
-        <ContactSection />
+        <ScrollContext>
+          <HeroSection heroRef={heroRef} />
+          <AboutSection />
+          <SkillsSection skills={skills} />
+          <ProjectsSection projects={projects} />
+          <ExperienceSection experience={experience} />
+          <CertificatesSection certificates={certificates} />
+          <ContactSection />
+        </ScrollContext>
       </main>
 
       <Chatbot />
